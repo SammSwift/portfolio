@@ -89,7 +89,7 @@ export const ProjectGrid = () => {
       imgUrl: "/plant-detector.png",
       isDeployed: true,
       link: "https://diet-detective-ai-bot.onrender.com",
-      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+      github: "https://github.com/SammSwift/Plant-Disease-Detector",
     },
     {
       title: "Swift Store",
@@ -97,8 +97,8 @@ export const ProjectGrid = () => {
         "A fullstack online E-commerce store for buying tech products coupled with user authentication and an admin dashborad.",
       imgUrl: "/ecommerce.png",
       isDeployed: true,
-      link: "https://diet-detective-ai-bot.onrender.com",
-      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+      link: "https://swiftstore.onrender.com/",
+      github: "https://github.com/SammSwift/SwiftStore/tree/main",
     },
 
     {
