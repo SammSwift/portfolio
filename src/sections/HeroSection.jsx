@@ -23,7 +23,7 @@ const HeroSection = () => {
             Samuel Okon
           </motion.div>
         </div>
-        <div className="dark:text-white text-black text-center md:text-left text-2xl md:text-4xl">
+        <div className="dark:text-white text-black text-center md:text-left text-2xl md:text-4xl poppins">
           I am a {""}
           <span className=" inline-block text-md text-sky-500">
             <Typewriter

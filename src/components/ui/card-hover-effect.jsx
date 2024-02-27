@@ -7,7 +7,7 @@ export const HoverEffect = ({ items, className }) => {
 
   return (
     <>
-      <h1 className="text-center pt-5 text-white text-4xl md:text-6xl font-raleway">
+      <h1 className="text-center pt-10 text-white text-4xl md:text-6xl font-raleway">
         CERTIFICATIONS
       </h1>
       <div
@@ -86,7 +86,7 @@ export const CardDescription = ({ className, children }) => {
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm text-justify",
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm text-justify poppins-light",
         className
       )}
     >

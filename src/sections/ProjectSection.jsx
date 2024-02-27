@@ -23,7 +23,7 @@ const ThreeDCard = ({
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm dark:text-neutral-300 poppins-extralight"
+          className="text-neutral-500 text-sm max-w-sm dark:text-neutral-300 poppins-light"
         >
           {/* Hover over this card to unleash the power of CSS perspective */}
           {description}
@@ -86,43 +86,47 @@ export const ProjectGrid = () => {
       title: "Plant Disease Detection",
       description:
         "Developed a system that leverages computer vision technology to revolutionize the way farmers detect and manage plant diseases.",
-      imgUrl: "/dd.png",
+      imgUrl: "/plant-detector.png",
       isDeployed: true,
       link: "https://diet-detective-ai-bot.onrender.com",
       github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+    },
+    {
+      title: "Swift Store",
+      description:
+        "A fullstack online E-commerce store for buying tech products coupled with user authentication and an admin dashborad.",
+      imgUrl: "/ecommerce.png",
+      isDeployed: true,
+      link: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+    },
+
+    {
+      title: "Driver Drowsiness Detector",
+      description:
+        "A real-time video analytics tool that monitors a driver's alertness while driving, triggering an alarm if signs of drowsiness are detected.",
+      imgUrl: "/Driver-Drowsiness-Detection.jpg",
+      isDeployed: true,
+      link: "https://youtube.com/shorts/mksNEUcQsuA?si=-EPDAi_234K3OrFC",
+      github: "",
     },
     {
       title: "Signature Redactor",
       description:
         "Trained a custom object detection model to accurately detect and redact signatures within PDF documents.",
       imgUrl: "/dd.png",
-      webAPP: true,
-      isDeployed: "https://diet-detective-ai-bot.onrender.com",
-      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
-    },
-    {
-      title: "Swift Store",
-      description: "An online E-commerce store for buying tech products.",
-      imgUrl: url,
-      isDeployed: true,
-      link: "https://diet-detective-ai-bot.onrender.com",
-      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
-    },
-    {
-      title: "E-commerce Store",
-      description: "An online store for buying and selling products.",
-      imgUrl: url,
+      link: "",
       isDeployed: false,
-      link: "https://diet-detective-ai-bot.onrender.com",
       github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
     },
     {
-      title: "E-commerce Store",
-      description: "An online store for buying and selling products.",
-      imgUrl: url,
-      isDeployed: true,
-      link: "https://diet-detective-ai-bot.onrender.com",
-      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+      title: "Movie Recommendation App",
+      description:
+        "A collaborative-filtering recommendation system that recommends movies to users based on their past interactions.",
+      imgUrl: "/movie-rec.jpg",
+      isDeployed: false,
+      link: "",
+      github: "",
     },
   ];
   return (

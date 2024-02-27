@@ -10,6 +10,13 @@ const CertificateGrid = () => {
       platform: "DeepLearning.AI",
     },
     {
+      title: "Generative AI Fundamentals",
+      description:
+        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      link: "https://www.cloudskillsboost.google/public_profiles/c318db42-49ad-4795-ada4-bbccf15b5a08/badges/4786326",
+      platform: "Google Cloud",
+    },
+    {
       title: "GC Big Data & ML Fundamentals",
       description:
         "This course provides an introduction to Google Cloud's AI and ML offerings, covering the entire data-to-AI lifecycle. It delves into AI foundations, development, and solutions, exploring various technologies, products, and tools.",
@@ -24,24 +31,18 @@ const CertificateGrid = () => {
       platform: "DeepLearning.AI",
     },
     {
-      title: "Meta",
+      title: "Complete NodeJs Developer",
       description:
-        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-      link: "https://meta.com",
-      platform: "DeepLearning.AI",
+        "This project based course introduces participants to all of the modern toolchain of a Node JS developer, to building scalable, efficient and performant backend or fullstack applications.",
+      link: "https://www.udemy.com/certificate/UC-1bd4aa0f-e3a5-40bc-ad2f-6dec602b730a/",
+      platform: "Udemy",
     },
+
     {
-      title: "Amazon",
+      title: "Neural Networks and Deep Learning",
       description:
-        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-      link: "https://amazon.com",
-      platform: "DeepLearning.AI",
-    },
-    {
-      title: "Microsoft",
-      description:
-        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-      link: "https://microsoft.com",
+        "This course covers how to build, train, and apply fully connected deep neural networks; implement efficient neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.",
+      link: "https://coursera.org/share/1dc3f2e693fb707a98324e175f41fe24",
       platform: "DeepLearning.AI",
     },
   ];
