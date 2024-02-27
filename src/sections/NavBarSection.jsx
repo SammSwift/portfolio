@@ -1,4 +1,6 @@
 import { FloatingNav } from "../components/ui/floating-navbar";
+import { FaHome } from "react-icons/fa";
+import { SiOpenproject } from "react-icons/si";
 import {
   FaCircleUser,
   FaToolbox,
@@ -11,7 +13,7 @@ const NavBarSection = () => {
     {
       name: "Home",
       link: "home",
-      // icon: <FaHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <FaHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Skills",
@@ -22,7 +24,7 @@ const NavBarSection = () => {
       name: "Projects",
       link: "project",
       icon: (
-        <FaCircleUser className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <SiOpenproject className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
     {

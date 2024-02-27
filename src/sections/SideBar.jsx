@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaInstagram } from "react-icons/fa"; // Import your social media icons
+import { FaInstagram } from "react-icons/fa"; // Import your social media icons
 import { FaLinkedin, FaGithub, FaKaggle, FaYoutube } from "react-icons/fa6";
 
 const Sidebar = () => {
