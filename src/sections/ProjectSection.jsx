@@ -1,9 +1,17 @@
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import { FaGithub } from "react-icons/fa6";
+import { SiSimilarweb } from "react-icons/si";
 
-const ThreeDCard = ({ title, description, imgUrl }) => {
+const ThreeDCard = ({
+  title,
+  description,
+  imgUrl,
+  isDeployed,
+  github,
+  link,
+}) => {
   return (
-    <CardContainer className=" max-w-[350px] max-h-[285px]">
+    <CardContainer className=" max-w-[370px] max-h-[300px]">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -15,7 +23,7 @@ const ThreeDCard = ({ title, description, imgUrl }) => {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm max-w-sm dark:text-neutral-300 poppins-extralight"
         >
           {/* Hover over this card to unleash the power of CSS perspective */}
           {description}
@@ -33,17 +41,26 @@ const ThreeDCard = ({ title, description, imgUrl }) => {
           <CardItem
             translateZ={20}
             as="button"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+            className="rounded-xl text-xs font-normal dark:text-white"
           >
-            Try now →{/* {demo} */}
+            {isDeployed && (
+              <a href={link}>
+                <button className="flex items-center px-3 py-2 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+                  Demo
+                  <SiSimilarweb className="ml-1" />
+                </button>
+              </a>
+            )}
           </CardItem>
           <CardItem
             translateZ={20}
             as="button"
-            className="flex items-center px-3 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+            className="px-3 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white font-semibold "
           >
-            <FaGithub className="mr-1" />
-            Code
+            <a href={github} className="flex items-center">
+              <FaGithub className="mr-1" />
+              Code
+            </a>
           </CardItem>
         </div>
       </CardBody>
@@ -57,44 +74,65 @@ export const ProjectGrid = () => {
 
   const projects = [
     {
-      title: "ai food chef",
-      description: "A food app that recommends recipes.",
-      imgUrl: url,
+      title: "Diet Detective AI Bot",
+      description:
+        "A food app leveraging AI to analyze food images and offer tailored dietary recommendations based on your restrictions.",
+      imgUrl: "/src/assets/potfolio-images/dd.png",
+      isDeployed: true,
+      link: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
     },
     {
-      title: "WeatherApp",
-      description: "An app that displays weather information.",
-      imgUrl: url,
+      title: "Plant Disease Detection",
+      description:
+        "Developed a system that leverages computer vision technology to revolutionize the way farmers detect and manage plant diseases.",
+      imgUrl: "/src/assets/potfolio-images/dd.png",
+      isDeployed: true,
+      link: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
     },
     {
-      title: "TaskManager",
-      description: "A task management application.",
+      title: "Signature Redactor",
+      description:
+        "Trained a custom object detection model to accurately detect and redact signatures within PDF documents.",
+      imgUrl: "/src/assets/potfolio-images/dd.png",
+      webAPP: true,
+      isDeployed: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+    },
+    {
+      title: "Swift Store",
+      description: "An online E-commerce store for buying tech products.",
       imgUrl: url,
+      isDeployed: true,
+      link: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
     },
     {
       title: "E-commerce Store",
       description: "An online store for buying and selling products.",
       imgUrl: url,
+      isDeployed: false,
+      link: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
     },
     {
       title: "E-commerce Store",
       description: "An online store for buying and selling products.",
       imgUrl: url,
-    },
-    {
-      title: "E-commerce Store",
-      description: "An online store for buying and selling products.",
-      imgUrl: url,
+      isDeployed: true,
+      link: "https://diet-detective-ai-bot.onrender.com",
+      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
     },
   ];
   return (
     <div>
-      <h1 className="text-center pt-5 text-white text-4xl md:text-6xl font-raleway mt-10">
+      <h1 className="text-center py-10 text-white text-4xl md:text-6xl font-raleway">
         PROJECTS
       </h1>
       {/* <SparklesPreview /> */}
       <div
-        className="grid grid-cols-1 md:gap-x-12 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto"
+        className="grid grid-cols-1 md:gap-x-12 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-y-1"
         name="project"
       >
         {projects.map((project, index) => (
@@ -102,6 +140,9 @@ export const ProjectGrid = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.imgUrl}
+            isDeployed={project.isDeployed}
+            link={project.link}
+            github={project.github}
             key={index}
           />
         ))}

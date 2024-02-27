@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"; // Import your social media icons
+import { FaTwitter, FaInstagram } from "react-icons/fa"; // Import your social media icons
 import { FaLinkedin, FaGithub, FaKaggle } from "react-icons/fa6";
 
 const Sidebar = () => {
@@ -13,7 +13,7 @@ const Sidebar = () => {
           <FaLinkedin size={24} />
         </a>
         <a
-          href="https://www.github.com/samyyswift"
+          href="https://github.com/SammSwift"
           className="text-white hover:text-blue-500 mt-4"
         >
           <FaGithub size={24} />
@@ -27,10 +27,7 @@ const Sidebar = () => {
         <a href="" className="text-white hover:text-blue-500 mt-4">
           <FaTwitter size={24} />
         </a>
-        <a
-          href="#"
-          className="text-white hover:text-blue-500 mt-4" // Added margin-top
-        >
+        <a href="#" className="text-white hover:text-blue-500 mt-4">
           <FaInstagram size={24} />
         </a>
       </div>

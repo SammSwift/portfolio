@@ -1,28 +1,9 @@
 // import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import Typewriter from "typewriter-effect";
-import profile from "../assets/profile-1.jpg";
+import profile from "../assets/profile.jpg";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const words = [
-    {
-      text: "I",
-    },
-    {
-      text: "am",
-    },
-    {
-      text: "a",
-    },
-    {
-      text: "Full Stack",
-    },
-    {
-      text: "Machine Learning Engineer.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
-
   return (
     <div
       className="flex items-center min-h-[40rem] md:justify-around justify-center"
@@ -44,7 +25,7 @@ const HeroSection = () => {
         </div>
         <div className="dark:text-white text-black text-center md:text-left text-2xl md:text-4xl">
           I am a {""}
-          <span className=" inline-block text-md">
+          <span className=" inline-block text-md text-sky-500">
             <Typewriter
               options={{
                 strings: [
@@ -59,10 +40,11 @@ const HeroSection = () => {
           </span>
         </div>
         <p className="text-neutral-50 font-light text-justify mx-20 md:mx-0 poppins-extralight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex,
-          debitis nostrum maiores nulla nesciunt voluptatum odio nisi similique
-          inventore eveniet quia amet quae itaque illum autem corrupti
-          voluptatem excepturi.
+          Experienced Machine Learning Engineer with 2 years of hands-on
+          expertise in building full-stack generative AI projects using the MERN
+          stack, Amazon Bedrock, Langchain, OpenAI, and Hugging Face. A valuable
+          addition to any team, committed to delivering innovative solutions and
+          driving success.
         </p>
         <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm mx-20 md:mx-0 ">
           My Resume
@@ -73,12 +55,12 @@ const HeroSection = () => {
         initial={{ x: "100vw" }} // Start off-screen to the right
         animate={{ x: 0 }} // Slide in to x = 0
         transition={{ duration: 2, ease: "easeInOut" }} // Animation duration
-        className="hidden md:flex md:max-w-96 md:max-h-96"
+        className="hidden md:flex md:max-w-96 md:max-h-100 "
       >
         <img
           src={profile}
           alt="Your Image"
-          className="rounded-full object-cover"
+          className=" object-cover rounded-xl"
         />
       </motion.div>
     </div>

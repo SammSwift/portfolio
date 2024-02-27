@@ -11,10 +11,6 @@ function App() {
   return (
     <>
       <div className="bg-black overflow-x-hidden">
-        {/* <div className="absolute top-[500px] left-[200px] w-72 h-72 rounded-full bg-purple-500 mix-blend-multiply filter animate-blob animation-delay-2000 blur-3xl "></div> */}
-        {/* <div className="absolute top-[500px] left-[300px] w-72 h-72 rounded-full bg-rose-500 mix-blend-multiply filter animate-blob blur-3xl"></div> */}
-        {/* <div className="absolute bottom-8 left-20 w-72 h-72 rounded-full bg-pink-300"></div> */}
-
         <NavBarSection />
 
         <main className="">
@@ -22,13 +18,13 @@ function App() {
           <section className="">
             <HeroSection />
           </section>
-          <section className="">
+          <section className="bg-gradient-to-tr from-black via-neutral-900 to-black">
             <ProjectGrid />
           </section>
           <section className="">
             <InfiniteMovingSkills />
           </section>
-          <section className="">
+          <section className="bg-gradient-to-tr from-black via-neutral-900 to-black">
             <Experience />
           </section>
           <section className="">
