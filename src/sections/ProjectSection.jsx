@@ -77,7 +77,7 @@ export const ProjectGrid = () => {
       title: "Diet Detective AI Bot",
       description:
         "A food app leveraging AI to analyze food images and offer tailored dietary recommendations based on your restrictions.",
-      imgUrl: "/src/assets/potfolio-images/dd.png",
+      imgUrl: "/src/assets/dd.png",
       isDeployed: true,
       link: "https://diet-detective-ai-bot.onrender.com",
       github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
@@ -86,7 +86,7 @@ export const ProjectGrid = () => {
       title: "Plant Disease Detection",
       description:
         "Developed a system that leverages computer vision technology to revolutionize the way farmers detect and manage plant diseases.",
-      imgUrl: "/src/assets/potfolio-images/dd.png",
+      imgUrl: "/src/assets/dd.png",
       isDeployed: true,
       link: "https://diet-detective-ai-bot.onrender.com",
       github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
@@ -95,7 +95,7 @@ export const ProjectGrid = () => {
       title: "Signature Redactor",
       description:
         "Trained a custom object detection model to accurately detect and redact signatures within PDF documents.",
-      imgUrl: "/src/assets/potfolio-images/dd.png",
+      imgUrl: "/src/assets/dd.png",
       webAPP: true,
       isDeployed: "https://diet-detective-ai-bot.onrender.com",
       github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
