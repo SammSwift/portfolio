@@ -46,9 +46,11 @@ const HeroSection = () => {
           addition to any team, committed to delivering innovative solutions and
           driving success.
         </p>
-        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm mx-20 md:mx-0 ">
-          My Resume
-        </button>
+        {/* <a href="https://www.resume.com/resume/builder/a0eca78d-30ea-497c-8ed0-65132929998d">
+          <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm mx-20 md:mx-0 ">
+            My Resume
+          </button>
+        </a> */}
       </div>
 
       <motion.div

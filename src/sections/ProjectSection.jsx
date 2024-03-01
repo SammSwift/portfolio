@@ -87,8 +87,8 @@ export const ProjectGrid = () => {
       description:
         "Developed a system that leverages computer vision technology to revolutionize the way farmers detect and manage plant diseases.",
       imgUrl: "/plant-detector.png",
-      isDeployed: true,
-      link: "https://diet-detective-ai-bot.onrender.com",
+      isDeployed: false,
+      link: "",
       github: "https://github.com/SammSwift/Plant-Disease-Detector",
     },
     {
@@ -108,16 +108,17 @@ export const ProjectGrid = () => {
       imgUrl: "/Driver-Drowsiness-Detection.jpg",
       isDeployed: true,
       link: "https://youtube.com/shorts/mksNEUcQsuA?si=-EPDAi_234K3OrFC",
-      github: "",
+      github: "https://github.com/SammSwift/Driver-Drowsiness-Detector",
     },
     {
-      title: "Signature Redactor",
+      title: "Patient Mortality Predictor",
       description:
-        "Trained a custom object detection model to accurately detect and redact signatures within PDF documents.",
-      imgUrl: "/dd.png",
+        "Implemented a deep neural network model to predict patient mortality from time series data contained in patient records.",
+      imgUrl: "/mortality.webp",
       link: "",
       isDeployed: false,
-      github: "https://github.com/SammSwift/Diet-Detective-AI-Bot",
+      github:
+        "https://github.com/SammSwift/Patient-Mortality-Detection-Using-DeepLearning",
     },
     {
       title: "Movie Recommendation App",
@@ -126,7 +127,7 @@ export const ProjectGrid = () => {
       imgUrl: "/movie-rec.jpg",
       isDeployed: false,
       link: "",
-      github: "",
+      github: "https://github.com/SammSwift/Movie-Recommender-System",
     },
   ];
   return (
